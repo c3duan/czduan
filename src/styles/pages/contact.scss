@@ -1,0 +1,92 @@
+@import '../mixins';
+@import '../variables';
+
+.contact {
+  $self: &;
+  &__header { padding-top: 20px; }
+  &__text {
+    color: color($grey, 200);
+    font-size: 0.9rem;
+  }
+  &__items {
+    list-style-type: none;
+    color: white;
+    margin: 22px 0 12px;
+    flex-wrap: wrap;
+    @include flex;
+  }
+  &__item {
+    margin: 0 14px 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 20px;
+    &-link {
+      text-decoration: none;
+      font-size: 0.95rem;
+      color: inherit;
+      transition: color $slow-speed $normal-ease, transform $slow-speed $normal-ease;
+      &:hover {
+        color: color($grey, 300);
+      }
+    }
+    &-header {
+      font-size: 0.85rem;
+      letter-spacing: 0.06rem;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+@include tablet {
+  .contact {
+    &__items { flex-direction: column }
+  }
+}
+
+@include phone {
+  .contact {
+    justify-content: flex-start;
+    &__item { margin: 0 0 16px; }
+  }
+}
+
+// Animations
+.contact {
+  $self: &;
+  animation: contact $page-speed $enter-ease backwards;
+  @keyframes contact {
+    from { opacity: 0 } to { opacity: 1 }
+  }
+  &__header {
+    animation: contact__header $page-speed $enter-ease backwards;
+    @keyframes contact__header {
+      from { transform: translate3d(0, -40px, 0) }
+      to { transform: translate3d(0, 0, 0) }
+    }
+  }
+  &__items {
+    animation: contact__items $page-speed $enter-ease backwards;
+    @keyframes contact__items {
+      from { transform: translate3d(-40px, 0, 0) }
+      to { transform: translate3d(0, 0, 0) }
+    }
+  }
+  &__content {
+    animation: contact__content $page-speed $enter-ease backwards;
+    @keyframes contact__content {
+      from { transform: translate3d(0, 40px, 0) }
+      to { transform: translate3d(0, 0, 0) }
+    }
+  }
+
+  &--fade {
+    transition: opacity $page-speed $exit-ease;
+    opacity: 0;
+    & #{ $self } {
+      &__header, &__items, &__content { transition: transform $page-speed $normal-ease }
+      &__header { transform: translate3d(0, -40px, 0) }
+      &__items { transform: translate3d(-40px, 0, 0) }
+      &__content { transform: translate3d(0, 40px, 0) }
+    }
+  }
+}

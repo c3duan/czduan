@@ -1,0 +1,105 @@
+@import '../mixins';
+@import '../variables';
+
+.nav {
+  $self: &;
+  z-index: 50;
+  padding: 14px $site-padding 2px;
+  transition: background-color $slow-speed $normal-ease;
+  animation: nav-drop $page-speed $enter-ease backwards;
+  @keyframes nav-drop {
+    from { transform: translate3d(0, -100%, 0) } to { transform: translate3d(0, 0, 0) }
+  }
+  @include flex(flex-start, center);
+  @include position(fixed, 0 auto auto, 0, 0, auto, 0);
+
+  &--scrolled {
+    background-color: color($grey, 900);
+  }
+
+  &__link { padding: 0 4px }
+  &__link, &__logo { text-decoration: none; color: inherit }
+  &__wrapper {
+    &--logo { margin-right: auto; z-index: 61 }
+  }
+
+  &__menu {
+    margin-right: 20px;
+    z-index: 61;
+    background: none;
+    border: none;
+    display: none;
+  }
+
+  &__bar {
+    width: 30px;
+    height: 2px;
+    padding: 0;
+    transition: transform $slow-speed $normal-ease;
+    background-color: white;
+    margin: 3px 0;
+    &--second { transition: transform $slow-speed $normal-ease, opacity $slow-speed $normal-ease; }
+    #{ $self }--show & {
+      &--first { transform: translate3d(0, 8px, 0) rotate(225deg) }
+      &--second { opacity: 0; transform: rotate(360deg) }
+      &--third { transform: translate3d(0, -8px, 0) rotate(-225deg) }
+    }
+  }
+
+  &__logo {
+    padding-left: 10px;
+    @include flex(center);
+    &-image {
+      width: 70px;
+      height: auto;
+    }
+  }
+
+  &__items {
+    list-style-type: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 0.85rem;
+    letter-spacing: 0.04rem;
+    @include flex;
+  }
+
+  &__item {
+    margin: 0 26px;
+    padding: 5px 0;
+    transition: color $slow-speed $normal-ease;
+    position: relative;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      transform: scale3d(0, 1, 1);
+      transition: transform $slow-speed $normal-ease;
+      @include position(absolute, auto auto 0);
+    }
+
+    &--active::after { transform: scale3d(1, 1, 1) }
+    &:not(&--active):hover { color: color($blue-grey, 100) }
+  }
+}
+
+@include tablet {
+  .nav {
+    padding: 14px 14px 2px;
+    &--show ~ .page { 
+      transform: translate3d(0, 100%, 0); 
+      opacity: 0;
+    }
+    &__menu { @include flex(column, center) }
+    &__items { display: none }
+  }
+}
+
+@include phone {
+  .nav {
+    &__logo-image {
+      width: 60px;
+    }
+  }
+}
