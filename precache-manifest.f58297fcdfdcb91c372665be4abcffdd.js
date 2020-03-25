@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/czduan/static/js/Work.d4cefc7e.chunk.js"
   },
   {
-    "revision": "a1394cc3bb8be9e0d6b1",
+    "revision": "054b016411a95ceb7e72",
     "url": "/czduan/static/css/main.c1aa0ae4.chunk.css"
   },
   {
-    "revision": "a1394cc3bb8be9e0d6b1",
-    "url": "/czduan/static/js/main.a1394cc3.chunk.js"
+    "revision": "054b016411a95ceb7e72",
+    "url": "/czduan/static/js/main.054b0164.chunk.js"
   },
   {
     "revision": "e00126f3fb0638762247",
@@ -68,11 +68,11 @@ self.__precacheManifest = [
     "url": "/czduan/static/media/back.06d466b2.webp"
   },
   {
-    "revision": "89c5e4e8de88bd74683194983500b175",
-    "url": "/czduan/static/media/back.89c5e4e8.jpeg"
+    "revision": "6bc52661f1d41748ef06328351076983",
+    "url": "/czduan/static/media/back.6bc52661.png"
   },
   {
-    "revision": "76e78aa051f7bc355273e22646dda364",
+    "revision": "1a1477a2fa09ffd18544c94daa424c1c",
     "url": "/czduan/index.html"
   }
 ];
