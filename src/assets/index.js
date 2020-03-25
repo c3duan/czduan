@@ -1,6 +1,6 @@
 import LogoWhiteText from './logo--no-back.png';
 import Back from './back.webp';
-import BackFallback from './back.jpeg';
+import BackFallback from './back.png';
 import Coinbase from './Coinbase.jpg';
 
 export {
