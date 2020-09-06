@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons/faAngleLeft';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons/faAngleRight';
@@ -66,40 +66,37 @@ const build = ({ header, date, href, sideheader, subheader, body }, key) => (
   </div>
 );
 
-class TimeLine extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      index: Math.max(0, this.props.data.length - 1)
-    }
-  }
+const TimeLine = ({ data }) => {
+  const [index, setIndex] = useState(data.length - 1);
+  useEffect(() => setIndex(data.length - 1), [data]);
 
-  render() {
-    return ( 
-      <div>
-        <div style={{ width: '80%', height: '100px', margin: '5 auto' }}>
-          <HorizontalTimeline
-            index={ this.state.index }
-            indexClick={(index) => {
-              this.setState({ index })
-            }}
-            values={ this.props.data.map(item => item['date'])}
-            styles={{
-              background: '#212121',
-              foreground: '#7b9d6f',
-              outline: '#dfdfdf' 
-            }}
-          />
-        </div>
-        <section className="work__content">
-          <div></div>
-          { build(this.props.data[this.state.index], this.state.index)}
-          <div></div>
-          <div></div>
-        </section>
-      </div>
-    );
-  }
+  return ( 
+    <div>
+      { 
+        index < data.length &&
+        <Fragment>
+          <div className="work__timeline">
+            <HorizontalTimeline
+              index={index}
+              indexClick={index => setIndex(index)}
+              values={data.map(item => item['date'])}
+              styles={{
+                background: '#212121',
+                foreground: '#7b9d6f',
+                outline: '#dfdfdf' 
+              }}
+            />
+          </div>
+          <section className="work__content">
+            <div></div>
+            { build(data[index], index) }
+            <div></div>
+            <div></div>
+          </section>
+        </Fragment>
+      }
+    </div>
+  );
 }
 
 
@@ -111,7 +108,7 @@ const Work = () => {
   const doShift = i => _shift(i, indexState, setShift);
   const left = () => doShift(Math.max(index - 1, 0));
   const right = () => doShift(Math.min(index + 1, MAX));
-  useEffect(() => _useEffect(right, left));
+  useEffect(() => _useEffect(right, left), [right, left]);
 
   const { title, data } = WORK[index];
   return (
@@ -133,11 +130,11 @@ const Work = () => {
         </ul>
       </div>
       { 
-        index >= 2? 
-        <TimeLine data={data}/>:
-        <section className="work__content"> 
-          {data.map((item, key) => build(item, key))}
-        </section> 
+        index >= 2 
+          ? <TimeLine data={data}/>
+          : <section className="work__content"> 
+              {data.map((item, key) => build(item, key))}
+            </section> 
       }
       <div className="work__wrapper--pdf">
         <a className="work__pdf" href={`${process.env.PUBLIC_URL}/resume.pdf`} aria-label="To PDF of Resume">Want a PDF? Click Here</a>

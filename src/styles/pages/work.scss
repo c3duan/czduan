@@ -49,6 +49,11 @@
     &:hover, &:active { background-color: white; color: color($grey, 900) }
   }
   &__icon { padding: 0 6px; font-size: 1.4rem; transition: color $slow-speed $normal-ease, transform $slow-speed $normal-ease }
+  &__timeline {
+    width: 80%;
+    height: 100px;
+    margin: 5 auto;
+  }
   &__wrapper {
     &--item-link { @include flex(column) }
     &--head { margin-right: auto; position: relative }

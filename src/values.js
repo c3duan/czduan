@@ -25,6 +25,8 @@ export const WORK = [
         body: [
           "Python",
           "Javascript/Typescript",
+          "Ruby",
+          "Golang",
           "C",
           "C++",
           "Java"
@@ -43,23 +45,25 @@ export const WORK = [
       {
         header: "Front-end",
         body: [
-          "ReactJS using CRA",
-          "Redux",
+          "ReactJS",
           "Angular 2",
+          "Rest Hooks",
+          "SWR",
           "Styled Components",
-          "Bootstrap + JQuery",
           "HTML5/CSS3"
         ]
       },
       {
         header: "Back-end",
         body: [
+          "Ruby on Rails",
           "NodeJS with Express",
           'Spring Boot',
           "Django",
           "Flask",
           "AWS S3",
-          "AWS Amplify"
+          "AWS Amplify",
+          "Docker"
         ]
       },
       {
@@ -133,7 +137,7 @@ export const WORK = [
         date: "9/27/2018",
         subheader: "September 2018 - June 2019,  La Jolla|USA",
         body: [
-          "Developed a Bayesian Personalized Ranking model that predicts whether or not users will play a game before purchasing from Steam with 93% accuracy",
+          "Achieved 93% accuracy on predicting whether users will play purchased video games with Bayesian Personalized Ranking",
           "Utilized Scipy and Scikit-Learn to apply popular visualization and data-processing practices (e.g. t-SNE) on huge real world data and build custom machine learning pipeline (e.g. BPR with a sigmoid activation function)",
           "Optimized the model training with stochastic gradient descent through map-reduce and negative sampling"
         ]
@@ -173,7 +177,12 @@ export const WORK = [
         sideheader: "Software Engineer Intern",
         date: "6/15/2020",
         subheader: "June 2020 - September 2020, San Francisco|USA",
-        body: "Incoming Software Engineer Intern for Summer 2020"
+        body: [
+          "Streamlined an in-app invoice workflow for Coinbase Custody that will save finance and operation team 40 hours of phone call per week, claim back $350K unpaid invoice, and provide 800+ Custody Organizations with timely invoices",
+          "Built scalable backend automatic billing service, invoice service and email notification service with Ruby on Rails",
+          "Ensured fast UI load time with proper frontend caching through Rest Hooks and SWR",
+          "Automatized Custody invoice PDF generation and storage in AWS S3 with the use of Rails ERB template and Puppeteer"
+        ]
       }
     ]
   },
@@ -239,18 +248,10 @@ export const WORK = [
         subheader: "January 2020 - Present,  UCSD Data Mining Lab",
         body: [
           "Coupled Angular components with Plotly to display interactive visualizations for terabytes of IoT time-series data",
-          "Optimized query evaluation with Sliding Window Feature Extraction and Locality-Sensitive Hashing of metadata",
-          "Managed the web application, the time-series database, and the search engine with Docker Containers and Bridge Network"
+          "Engineered query evaluation with Sliding Window Feature Extraction and Locality-Sensitive Hashing of metadata",
+          "Implemented an efficient time-series query matching pipeline that utilizes a heuristic Dynamic Time Warping algorithm to search across 20 Million data points in less than 3 seconds"
         ],
         href: "https://github.com/c3duan/Monitor"
-      },
-      {
-        header: "GreenPoint Rated Mobile App",
-        sideheader: "Project Manager",
-        date: "3/7/2020",
-        subheader: "March 2020 - Present,  Triton Software Engineering",
-        body: "A mobile application that allows homeowners to improve their environmental protection properties for GreenPoint certification on iOS and Android",
-        href: "https://github.com/TritonSE/GreenPoint-Rated-App"
       }
     ]
   }
