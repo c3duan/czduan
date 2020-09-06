@@ -5,12 +5,12 @@
   "homepage": "https://c3duan.github.io/czduan",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.18",
-    "@fortawesome/free-brands-svg-icons": "^5.8.2",
-    "@fortawesome/free-solid-svg-icons": "^5.8.2",
-    "@fortawesome/react-fontawesome": "^0.1.4",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-horizontal-timeline": "^1.5.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5"
@@ -24,10 +24,10 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "enzyme": "^3.9.0",
+    "enzyme": "^3.11.0",
     "gh-pages": "^1.2.0",
-    "node-sass": "^4.12.0",
-    "react-test-renderer": "^16.8.6"
+    "node-sass": "^4.14.1",
+    "react-test-renderer": "^16.13.1"
   },
   "browserslist": [
     ">0.2%",
