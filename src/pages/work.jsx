@@ -67,18 +67,37 @@ const build = ({ header, date, href, sideheader, subheader, body }, key) => (
 );
 
 const TimeLine = ({ data }) => {
-  const [index, setIndex] = useState(data.length - 1);
-  useEffect(() => setIndex(data.length - 1), [data]);
+  const [ fade, setFade ] = useState(false);
+  const [ timelineIndex, setTimelineIndex ] = useState(data.length - 1);
+  const [ sectionIndex, setSectionIndex ] = useState(data.length - 1);
+  const doFade = (i) => {
+    if (i !== timelineIndex) {
+      setFade(true);
+      setTimelineIndex(i);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.setTimeout(
+        () => {
+          setSectionIndex(i);
+          setFade(false);
+        }, TRANSITION_DELAY
+      );
+    }
+  };
 
+  useEffect(() => {
+    setTimelineIndex(data.length - 1);
+    setSectionIndex(data.length - 1);
+  }, [data]);
+  
   return ( 
-    <div>
+    <Fragment>
       { 
-        index < data.length &&
+        timelineIndex < data.length && sectionIndex < data.length &&
         <Fragment>
           <div className="work__timeline">
             <HorizontalTimeline
-              index={index}
-              indexClick={index => setIndex(index)}
+              index={timelineIndex}
+              indexClick={index => doFade(index)}
               values={data.map(item => item['date'])}
               styles={{
                 background: '#212121',
@@ -87,15 +106,17 @@ const TimeLine = ({ data }) => {
               }}
             />
           </div>
-          <section className="work__content">
-            <div></div>
-            { build(data[index], index) }
-            <div></div>
-            <div></div>
-          </section>
+          <div className={fade ? "work--shift": null}>
+            <section className="work__content">
+              <div></div>
+              { build(data[sectionIndex], sectionIndex) }
+              <div></div>
+              <div></div>
+            </section>
+          </div>
         </Fragment>
       }
-    </div>
+    </Fragment>
   );
 }
 
@@ -112,7 +133,7 @@ const Work = () => {
 
   const { title, data } = WORK[index];
   return (
-    <Page block="work" className={shift? "work--shift": null}>
+    <Page block="work" className={shift ? "work--shift" : null}>
       <div className="work__head">
         <div className="work__wrapper--head">
           <h1 className="work__topic">Resume</h1>

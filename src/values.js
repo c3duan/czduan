@@ -35,11 +35,12 @@ export const WORK = [
       {
         header: "DBMS",
         body: [
-          "MongoDB + Mongoose",
-          "Firebase",
-          "AWS DynamoDB",
+          "MySQL",
+          "PostgreSQL",
           "SQLite",
-          "MySQL"
+          "MongoDB + Mongoose",
+          "AWS DynamoDB",
+          "Firebase",
         ]
       },
       {
@@ -88,7 +89,7 @@ export const WORK = [
           "Git",
           "CI/CD",
           "Unix/Linux",
-          "Rollup + Webpack",
+          "Puppeteer",
           "Selenium",
           "LaTex"
         ]
