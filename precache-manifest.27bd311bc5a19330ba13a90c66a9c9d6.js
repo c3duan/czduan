@@ -8,12 +8,12 @@ self.__precacheManifest = [
     "url": "/czduan/static/js/404.cd6314d2.chunk.js"
   },
   {
-    "revision": "46ebcff54fa7a0395de3",
+    "revision": "ddbde929104e25dbf891",
     "url": "/czduan/static/css/About.d693dc89.chunk.css"
   },
   {
-    "revision": "46ebcff54fa7a0395de3",
-    "url": "/czduan/static/js/About.46ebcff5.chunk.js"
+    "revision": "ddbde929104e25dbf891",
+    "url": "/czduan/static/js/About.ddbde929.chunk.js"
   },
   {
     "revision": "71b29c68cc265b34f441",
@@ -32,24 +32,24 @@ self.__precacheManifest = [
     "url": "/czduan/static/js/Home.25e8cf36.chunk.js"
   },
   {
-    "revision": "e1fbac0f681bbdb840ee",
+    "revision": "aa537ec22b2567d0af27",
     "url": "/czduan/static/css/Work.6dbbdbf2.chunk.css"
   },
   {
-    "revision": "e1fbac0f681bbdb840ee",
-    "url": "/czduan/static/js/Work.e1fbac0f.chunk.js"
+    "revision": "aa537ec22b2567d0af27",
+    "url": "/czduan/static/js/Work.aa537ec2.chunk.js"
   },
   {
-    "revision": "d86799c31eb79f5911a6",
+    "revision": "3b777669b90de7455553",
     "url": "/czduan/static/css/main.d8a78ab4.chunk.css"
   },
   {
-    "revision": "d86799c31eb79f5911a6",
-    "url": "/czduan/static/js/main.d86799c3.chunk.js"
+    "revision": "3b777669b90de7455553",
+    "url": "/czduan/static/js/main.3b777669.chunk.js"
   },
   {
-    "revision": "31b28d9db5cc5089deab",
-    "url": "/czduan/static/js/runtime~main.31b28d9d.js"
+    "revision": "c419fd125c13ecfa649f",
+    "url": "/czduan/static/js/runtime~main.c419fd12.js"
   },
   {
     "revision": "18f025521f3cc7e33f4f",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/czduan/static/media/back.6bc52661.png"
   },
   {
-    "revision": "d675f39c9bb581dd455603630510c77a",
+    "revision": "bbbc6a77d6b4071481e8a2ccaffa8991",
     "url": "/czduan/index.html"
   }
 ];
