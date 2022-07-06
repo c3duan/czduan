@@ -23,13 +23,13 @@ export const WORK = [
       {
         header: "Languages",
         body: [
+          "Golang",
           "Python",
           "Javascript/Typescript",
+          "Java",
           "Ruby",
-          "Golang",
           "C",
           "C++",
-          "Java"
         ]
       },
       {
@@ -50,6 +50,7 @@ export const WORK = [
           "Angular 2",
           "Rest Hooks",
           "SWR",
+          "GraphQL",
           "Styled Components",
           "HTML5/CSS3"
         ]
@@ -57,13 +58,15 @@ export const WORK = [
       {
         header: "Back-end",
         body: [
+          "gRPC",
           "Ruby on Rails",
           "NodeJS with Express",
-          'Spring Boot',
+          "Spring Boot",
           "Django",
           "Flask",
           "AWS S3",
           "AWS Amplify",
+          "Kafka",
           "Docker"
         ]
       },
@@ -87,11 +90,9 @@ export const WORK = [
         header: "Others",
         body: [
           "Git",
+          "Bash/Zsh",
           "CI/CD",
           "Unix/Linux",
-          "Puppeteer",
-          "Selenium",
-          "LaTex"
         ]
       },
     ]
@@ -101,8 +102,8 @@ export const WORK = [
     data: [
       {
         header: "University of California, San Diego",
-        subheader: "September 2017 - Present,  La Jolla|USA",
-        body: "Pursing Bachelor of Science in Computer Science, third year"
+        subheader: "September 2017 - March 2021,  La Jolla|USA",
+        body: "Bachelor of Science in Computer Science, Cum Laude"
       },
       {
         header: "Saint Joseph's Preparatory School",
@@ -161,7 +162,7 @@ export const WORK = [
         subheader: "July 2019 - September 2019,  Palo Alto|USA",
         body: [
           "Expedited image resizing and uploading to S3 bucket by using Thumbnailator to reduce 30% thumbnail load time",
-          "Constructed an scalable RESTful Flask app with Swagger Codegen and SQLAlchemy for reliable underwriting automation",
+          "Constructed a scalable RESTful Flask app with Swagger Codegen and SQLAlchemy for reliable underwriting automation",
           "Designed an enterprise software user interface with Angular and Clarity to support customizable document note-taking",
           "Implemented document uploading, sharing, editing, and labeling across multiple online platforms with Angular, Spring Boot, and AWS S3 for thousands of underwriters from large insurance companies (e.g. RGA Insurance, AIA Group)"
         ]
@@ -183,6 +184,18 @@ export const WORK = [
           "Built scalable backend automatic billing service, invoice service and email notification service with Ruby on Rails",
           "Ensured fast UI load time with proper frontend caching through Rest Hooks and SWR",
           "Automatized Custody invoice PDF generation and storage in AWS S3 with the use of Rails ERB template and Puppeteer"
+        ]
+      },
+      {
+        header: "Coinbase",
+        sideheader: "Software Engineer",
+        date: "4/12/2021",
+        subheader: "April 2021 - Present, San Francisco|USA",
+        body: [
+          "Integrated third party exchange APIs to increase liquidity options for institutional clients using Coinbase Prime, generated $87B+ in total trading volume",
+          "Built scalable and fault-tolerant services to reliably place, track, and recover 10K+ orders per second with data sharding and failover redundancy",
+          "Designed and scaled the market data service to deliver high fidelity price book for 500+ products within 30ms of latency",
+          "Scoped and implemented reusable and extensible framework for novel work to increase developer productivity and code maintainability"
         ]
       }
     ]
@@ -234,7 +247,7 @@ export const WORK = [
         header: "UniLink Share",
         sideheader: "Mobile Developer",
         date: "1/7/2020",
-        subheader: "January 2020 - Present,  AiLink Technology Corporation",
+        subheader: "January 2020 - March 2021,  AiLink Technology Corporation",
         body: [
           "Used AWS Amplify to build scalable mobile application with S3, DynamoDB, and Cognito",
           "Streamlined the process of finding housing and future roommates with React Native, Redux, and GraphQL",
@@ -243,16 +256,28 @@ export const WORK = [
         href: "https://apps.apple.com/us/app/unilink-share/id1494763843"
       },
       {
-        header: "IoT Monitor",
-        sideheader: "Developer",
+        header: "Building Sensor Data Search Engine",
+        sideheader: "Undergraduate Researcher",
         date: "1/23/2020",
-        subheader: "January 2020 - Present,  UCSD Data Mining Lab",
+        subheader: "January 2020 - November 2021,  UCSD Data Mining Lab",
         body: [
           "Coupled Angular components with Plotly to display interactive visualizations for terabytes of IoT time-series data",
           "Engineered query evaluation with Sliding Window Feature Extraction and Locality-Sensitive Hashing of metadata",
           "Implemented an efficient time-series query matching pipeline that utilizes a heuristic Dynamic Time Warping algorithm to search across 20 Million data points in less than 3 seconds"
         ],
-        href: "https://github.com/c3duan/Monitor"
+        href: "https://dl.acm.org/doi/10.1145/3486611.3486647"
+      },
+      {
+        header: "Your Clear Way Mobile App",
+        sideheader: "Project Manager",
+        date: "1/20/2021",
+        subheader: "January 2021 - March 2022,  Triton Software Engineering",
+        body: [
+          "Led a team of 7 developers to mobile app that homeowners can use to show progress on making their home more eco-friendly and achieving different levels based on the significance and number of upgrades they make",
+          "Architected the point and badge system with AWS Amplify stack that utilizes various AWS technologies for GraphQL data layer, user authentication, serverless backend logic, and persistent data storage",
+          "Worked as a cross-functional Project Manager with non-profit stakeholders and UX designers to scope out the requirements and timeline of the project"
+        ],
+        href: "https://github.com/TritonSE/YCW-Green-Home-Application"
       }
     ]
   }
