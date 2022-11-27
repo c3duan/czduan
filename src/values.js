@@ -173,7 +173,7 @@ export const WORK = [
         date: "6/15/2020",
         subheader: "June 2020 - September 2020, San Francisco|USA",
         body: [
-          "Streamlined an in-app invoice workflow for Coinbase Custody that will save finance and operation team 40 hours of phone call per week, claim back $350K unpaid invoice, and provide 800+ Custody Organizations with timely invoices",
+          "Streamlined an in-app invoice workflow for Coinbase Custody that saved finance and operation team 40 hours of phone call per week, claimed back $350K unpaid invoice, and provided 800+ Custody Organizations with timely invoices",
           "Built scalable backend automatic billing service, invoice service and email notification service with Ruby on Rails",
           "Ensured fast UI load time with proper frontend caching through Rest Hooks and SWR",
           "Automatized Custody invoice PDF generation and storage in AWS S3 with the use of Rails ERB template and Puppeteer"
