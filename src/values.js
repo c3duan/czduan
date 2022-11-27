@@ -11,7 +11,7 @@ export const INFO = {
   Facebook: { icon: "faFacebook", link: "https://www.facebook.com/arnold.duan.1", alt: "Link to Chengzhu Duan's Facebook" },
   Linkedin: { icon: "faLinkedin", link: "https://www.linkedin.com/in/chengzhu-duan/", alt: "Link to Chengzhu Duan's LinkedIn" },
   Github: { icon: "faGithub", link: "https://github.com/c3duan", alt: "Link to Chengzhu Duan's GitHub" },
-  Email: { link: "mailto:Chengzhu.Duan@gmail.com", text: "Chengzhu.Duan@gmail.com", alt: "Link to send an email to Chengzhu Duan" }
+  Email: { link: "mailto:chengzhu.duan@gmail.com", text: "chengzhu.duan@gmail.com", alt: "Link to send an email to Chengzhu Duan" }
 }
 
 export const TRANSITION_DELAY = 500;
@@ -120,18 +120,8 @@ export const WORK = [
         sideheader: "Project Developer",
         date: "4/3/2018",
         subheader: "April 2018 - September 2019,  La Jolla|USA",
-        body: "Worked in a team of 4 developers to provide pro-bono software services for local non-profit organizations."
-      },
-      {
-        header: "Yi Yun Information Technology Corporation",
-        sideheader: "Software Tester Intern",
-        date: "6/23/2018",
-        subheader: "June 2017 - August 2017,  Guangzhou|China",
-        body: [
-          "Conducted automated and manual tests with Selenium on an e-commerce web application with 10000+ users",
-          "Implemented a reusable regression test module with Selenium to speed up the testing process by 60%",
-          "Followed practice of parallel testing and atomic testing with flexible and efficient usage of locators"
-        ]
+        body: "Worked in a team of 4 developers to provide pro-bono software services for local non-profit organizations.",
+        href: "https://tse.ucsd.edu/"
       },
       {
         header: "Julian McAuley Lab",
@@ -142,7 +132,8 @@ export const WORK = [
           "Achieved 93% accuracy on predicting whether users will play purchased video games with Bayesian Personalized Ranking",
           "Utilized Scipy and Scikit-Learn to apply popular visualization and data-processing practices (e.g. t-SNE) on huge real world data and build custom machine learning pipeline (e.g. BPR with a sigmoid activation function)",
           "Optimized the model training with stochastic gradient descent through map-reduce and negative sampling"
-        ]
+        ],
+        href: "https://github.com/c3duan/Steam-Engagement-Predictor"
       },
       {
         header: "Voyager Space Technologies",
@@ -165,14 +156,16 @@ export const WORK = [
           "Constructed a scalable RESTful Flask app with Swagger Codegen and SQLAlchemy for reliable underwriting automation",
           "Designed an enterprise software user interface with Angular and Clarity to support customizable document note-taking",
           "Implemented document uploading, sharing, editing, and labeling across multiple online platforms with Angular, Spring Boot, and AWS S3 for thousands of underwriters from large insurance companies (e.g. RGA Insurance, AIA Group)"
-        ]
+        ],
+        href: "https://omniscience.com/"
       },
       {
         header: "Triton Software Engineering",
         sideheader: "Project Manager",
         date: "9/27/2019",
         subheader: "September 2019 - Present,  La Jolla|USA",
-        body: "Worked in a team of 4 developer to provide pro-bono software services for local non-profit organizations."
+        body: "Worked in a team of 4 developer to provide pro-bono software services for local non-profit organizations.",
+        href: "https://tse.ucsd.edu/"
       },
       {
         header: "Coinbase",
@@ -184,7 +177,8 @@ export const WORK = [
           "Built scalable backend automatic billing service, invoice service and email notification service with Ruby on Rails",
           "Ensured fast UI load time with proper frontend caching through Rest Hooks and SWR",
           "Automatized Custody invoice PDF generation and storage in AWS S3 with the use of Rails ERB template and Puppeteer"
-        ]
+        ],
+        href: "https://www.coinbase.com/"
       },
       {
         header: "Coinbase",
@@ -196,7 +190,8 @@ export const WORK = [
           "Built scalable and fault-tolerant services to reliably place, track, and recover 10K+ orders per second with data sharding and failover redundancy",
           "Designed and scaled the market data service to deliver high fidelity price book for 500+ products within 30ms of latency",
           "Scoped and implemented reusable and extensible framework for novel work to increase developer productivity and code maintainability"
-        ]
+        ],
+        href: "https://www.coinbase.com/"
       }
     ]
   },
