@@ -268,7 +268,7 @@ export const WORK = [
         date: "1/20/2021",
         subheader: "January 2021 - March 2022,  Triton Software Engineering",
         body: [
-          "Led a team of 7 developers to mobile app that homeowners can use to show progress on making their home more eco-friendly and achieving different levels based on the significance and number of upgrades they make",
+          "Led a team of 7 developers to build a mobile app that homeowners can use to show progress on making their homes more eco-friendly and claim badges based on the significance and number of upgrades they make",
           "Architected the point and badge system with AWS Amplify stack that utilizes various AWS technologies for GraphQL data layer, user authentication, serverless backend logic, and persistent data storage",
           "Worked as a cross-functional Project Manager with non-profit stakeholders and UX designers to scope out the requirements and timeline of the project"
         ],
