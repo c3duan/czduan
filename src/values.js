@@ -182,14 +182,14 @@ export const WORK = [
       },
       {
         header: "Coinbase",
-        sideheader: "Software Engineer",
+        sideheader: "Senior Software Engineer",
         date: "4/12/2021",
-        subheader: "April 2021 - Present, San Francisco|USA",
+        subheader: "April 2021 - Present, New York|USA",
         body: [
-          "Integrated third party exchange APIs to increase liquidity options for institutional clients using Coinbase Prime, generated $87B+ in total trading volume",
-          "Built scalable and fault-tolerant services to reliably place, track, and recover 10K+ orders per second with data sharding and failover redundancy",
-          "Designed and scaled the market data service to deliver high fidelity price book for 500+ products within 30ms of latency",
-          "Scoped and implemented reusable and extensible framework for novel work to increase developer productivity and code maintainability"
+          "Pioneered a reusable adapter framework for integrating venue APIs, expanding liquidity access for institutional clients on Coinbase Prime",
+          "Built scalable and fault-tolerant Brokerage services in Go, supporting billions in trading volume across retail and institutional order ﬂows",
+          "Drove the org-wide roadmap for high-ﬁdelity market data, delivering updates for 250k+ trading pairs across asset classes within 10ms latency",
+          "Led the zero-to-one launch of Coinbase Equities trading, enabling support for stocks, ETFs, and options"
         ],
         href: "https://www.coinbase.com/"
       }
